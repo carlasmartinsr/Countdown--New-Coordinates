@@ -144,16 +144,14 @@ figcaption {
   transition: all 0.5s ease-in-out;
 }
 
-@media (hover: hover) {
-  figure:hover {
-    transform: translateY(-6px);
-    box-shadow: 0px 8px 17px -2px rgba(81, 79, 79, 0.75);
-  }
+figure:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 8px 17px -2px rgba(81, 79, 79, 0.75);
+}
 
-  figure:hover::after {
-    opacity: 1;
-  }
-  figure:hover figcaption {
-    opacity: 1;
-  }
+figure:hover::after {
+  opacity: 1;
+}
+figure:hover figcaption {
+  opacity: 1;
 }
