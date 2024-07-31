@@ -64,10 +64,14 @@ const elements = document.querySelectorAll(".hover-effect");
 
 elements.forEach((element) => {
   element.addEventListener("touchstart", () => {
-    element.classList.add("touch-hover-effect");
+    if (element.classList.contains("touch-hover-effect"))
+      element.classList.remove("touch-hover-effect");
+    else {
+      element.classList.add("touch-hover-effect");
+    }
   });
 
-  element.addEventListener("touchend", () => {
+  /* element.addEventListener("touchend", () => {
     element.classList.remove("touch-hover-effect");
-  });
+  }); */
 });
