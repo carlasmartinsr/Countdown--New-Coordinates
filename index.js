@@ -68,8 +68,3 @@ window.onload = function () {
     confetti();
   }, 2000);
 };
-
-document.getElementById("figure-01").addEventListener("click", function (e) {
-  e.preventDefault();
-  alert("Hello world...");
-});
