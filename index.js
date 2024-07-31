@@ -37,8 +37,8 @@ function updateCountDown() {
   display(leftDays, leftHours, leftMinutes, leftSeconds, departure);
 }
 
-function Confetti() {
-  jsConfetti.addConfetti({
+async function Confetti() {
+  await jsConfetti.addConfetti({
     emojis: ["🌈", "⚡️", "💥", "✨", "💫", "🤍", "🚀"],
     confettiColors: [
       "#ff0a54",
@@ -52,6 +52,7 @@ function Confetti() {
     confettiNumber: 150,
     emojiSize: 22,
   });
+  window.location.reload;
 }
 
 updateCountDown();
