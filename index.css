@@ -94,7 +94,7 @@ figure {
   grid-template-columns: repeat(3, minmax(min-content, 270px));
   gap: 10px;
   grid-auto-rows: 15em;
-  grid-auto-rows: minmax(150px, auto);
+  grid-auto-rows: minmax(200px, auto);
   padding: 2.2em 1.5em;
 }
 
