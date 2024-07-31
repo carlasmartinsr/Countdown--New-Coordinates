@@ -176,7 +176,7 @@ figcaption {
 
 .touch-hover-effect {
   opacity: 1;
-  transition: opacity 1s linear;
+  transform: translateY(0);
   background-color: #fffcf9;
   width: 100%;
   height: 100%;
