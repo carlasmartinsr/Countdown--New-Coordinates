@@ -61,6 +61,7 @@ window.onload = function () {
 };
 
 const elements = document.querySelectorAll(".hover-effect");
+const elements2 = document.querySelectorAll(".translate-y");
 
 /*elements.forEach((element) => {
    element.addEventListener("touchstart", () => {
@@ -86,10 +87,22 @@ document.addEventListener("DOMContentLoaded", function () {
       this.classList.add("touch-hover-effect");
     });
   });
+  elements2.forEach((element) => {
+    element.addEventListener("click", function (e) {
+      e.stopPropagation();
+      elements.forEach((element) => {
+        element.classList.remove("translate-y");
+      });
+      this.classList.add("translate-y");
+    });
+  });
 });
 
 document.body.addEventListener("click", function () {
   elements.forEach((element) => {
+    element.classList.remove("touch-hover-effect");
+  });
+  elements2.forEach((element) => {
     element.classList.remove("touch-hover-effect");
   });
 });
