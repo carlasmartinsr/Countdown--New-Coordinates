@@ -60,49 +60,20 @@ window.onload = function () {
   }, 2000);
 };
 
-const elements = document.querySelectorAll(".hover-effect");
-const elements2 = document.querySelectorAll(".rotate");
-
-/*elements.forEach((element) => {
-   element.addEventListener("touchstart", () => {
-    if (element.classList.contains("touch-hover-effect"))
-      element.classList.remove("touch-hover-effect");
-    else {
-      element.classList.add("touch-hover-effect");
-    }
-  });
-
- element.addEventListener("touchend", () => {
-    element.classList.remove("touch-hover-effect");
-  }); 
-});*/
+const fgEffect = document.querySelectorAll(".effect");
 
 document.addEventListener("DOMContentLoaded", function () {
-  elements.forEach((element) => {
-    element.addEventListener("click", function (e) {
+  fgEffect.forEach((fg) => {
+    fg.classList.remove("effect");
+    fg.addEventListener("click", function (e) {
       e.stopPropagation();
-      elements.forEach((element) => {
-        element.classList.remove("touch-hover-effect");
-      });
-      this.classList.add("touch-hover-effect");
-    });
-  });
-  elements2.forEach((element) => {
-    element.addEventListener("click", function (e) {
-      e.stopPropagation();
-      elements.forEach((element) => {
-        element.classList.remove("rotate");
-      });
-      this.classList.add("rotate");
+      this.classList.toggle("effect");
     });
   });
 });
 
 document.body.addEventListener("click", function () {
-  elements.forEach((element) => {
-    element.classList.remove("touch-hover-effect");
-  });
-  elements2.forEach((element) => {
-    element.classList.remove("touch-hover-effect");
+  fgEffect.forEach((fg) => {
+    fg.classList.remove("effect");
   });
 });
