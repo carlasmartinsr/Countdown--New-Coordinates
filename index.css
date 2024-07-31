@@ -93,11 +93,11 @@ figure {
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 1.5em;
   padding: 2em 1.5em;
   grid-auto-rows: 18em;
-  max-width: 58em;
+  max-width: 40em;
 }
 
 .card-img {
