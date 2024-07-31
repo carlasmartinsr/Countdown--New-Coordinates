@@ -9,18 +9,6 @@ const minutes = document.querySelector("#minutes");
 const seconds = document.querySelector("#seconds");
 let leftDays, leftHours, leftMinutes, leftSeconds;
 
-figureTest.addEventListener("touchstart", function (e) {
-  e.preventDefault();
-  document.getElementById("figure-1").style.opacity = 1;
-  document.getElementById("figcap-1").style.opacity = 1;
-});
-
-figureTest.addEventListener("touchend", function (e) {
-  e.preventDefault();
-  document.getElementById("figure-1").style.opacity = 0;
-  document.getElementById("figcap-1").style.opacity = 0;
-});
-
 const expirationDate = new Date("August 22, 2024 09:00:00");
 const expirationTime = expirationDate.getTime();
 
@@ -42,7 +30,9 @@ function updateCountDown() {
   );
   leftMinutes = Math.floor((departure % (1000 * 60 * 60)) / (1000 * 60));
   leftSeconds = Math.floor((departure % (1000 * 60)) / 1000);
+
   display();
+  console.log(leftDays);
 }
 
 function confetti() {
@@ -63,6 +53,7 @@ function confetti() {
 
 updateCountDown();
 setInterval(updateCountDown, 1000);
+
 window.onload = function () {
   setTimeout(() => {
     confetti();
