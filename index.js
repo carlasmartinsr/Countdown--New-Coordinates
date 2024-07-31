@@ -58,5 +58,5 @@ setInterval(updateCountDown, 1000);
 window.onload = function () {
   setTimeout(() => {
     confetti();
-  }, 3000);
+  }, 2000);
 };
