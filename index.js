@@ -55,4 +55,8 @@ function confetti() {
 
 updateCountDown();
 setInterval(updateCountDown, 1000);
-confetti();
+window.onload = function () {
+  setTimeout(() => {
+    confetti();
+  }, 3000);
+};
