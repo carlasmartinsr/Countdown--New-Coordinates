@@ -21,7 +21,6 @@ body {
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  max-height: 100vh;
 }
 
 h1 {
@@ -93,9 +92,9 @@ figure {
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 1.5em;
-  padding: 2em 1.5em;
+  padding: 2.2em 1.5em;
   grid-auto-rows: 18em;
   max-width: 40em;
 }
