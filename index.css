@@ -91,9 +91,9 @@ figure {
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(3, minmax(min-content, 300px));
+  grid-template-columns: repeat(3, minmax(min-content, 250px));
   gap: 10px;
-  grid-auto-rows: minmax(200px, auto);
+  grid-auto-rows: 18em;
   padding: 2.2em 1.5em;
 }
 
