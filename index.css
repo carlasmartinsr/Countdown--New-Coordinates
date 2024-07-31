@@ -177,4 +177,6 @@ figcaption {
   opacity: 1;
   transition: opacity 1s linear;
   background-color: #fffcf9;
+  width: 100%;
+  height: 100%;
 }
