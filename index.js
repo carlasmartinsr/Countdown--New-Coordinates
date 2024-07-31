@@ -68,3 +68,19 @@ window.onload = function () {
     confetti();
   }, 2000);
 };
+
+const elements = document.querySelectorAll(".hover-effect");
+
+elements.forEach((element) => {
+  // Add touchstart event listener
+  element.addEventListener("touchstart", () => {
+    console.log("test1");
+    element.classList.add("touch-hover-effect");
+  });
+
+  element.addEventListener("touchend", () => {
+    // Remove touch effect
+    console.log("test2");
+    element.classList.remove("touch-hover-effect");
+  });
+});
