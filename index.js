@@ -61,7 +61,7 @@ window.onload = function () {
 };
 
 const elements = document.querySelectorAll(".hover-effect");
-const elements2 = document.querySelectorAll(".translate-y");
+const elements2 = document.querySelectorAll(".rotate");
 
 /*elements.forEach((element) => {
    element.addEventListener("touchstart", () => {
@@ -91,9 +91,9 @@ document.addEventListener("DOMContentLoaded", function () {
     element.addEventListener("click", function (e) {
       e.stopPropagation();
       elements.forEach((element) => {
-        element.classList.remove("translate-y");
+        element.classList.remove("rotate");
       });
-      this.classList.add("translate-y");
+      this.classList.add("rotate");
     });
   });
 });
