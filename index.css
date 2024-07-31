@@ -101,8 +101,14 @@ figure {
 
 @media (min-width: 500px) {
   .card-container {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 1.5em;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 850px) {
+  .card-container {
+    grid-template-columns: repeat(4, 1fr);
+    width: 75em;
   }
 }
 
@@ -183,4 +189,5 @@ figcaption {
 
 .touch-hover-effect {
   opacity: 1;
+  transition: opacity 1s linear;
 }
