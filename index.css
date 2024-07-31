@@ -1,0 +1,157 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Preahvihear", sans-serif;
+  background-color: #0d0d0d;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("img/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #8f7b3f;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+h1 {
+  margin: 1.5em 0 1em 0;
+  font-size: 1.6rem;
+  letter-spacing: 0.1em;
+}
+
+h2 {
+  margin: 0 0 0.4em;
+  transform: rotate(-1.5deg);
+}
+
+section {
+  padding: 1.8em 0;
+}
+
+@media (min-width: 500px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+figure {
+  margin: 0;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.5em;
+  list-style-type: none;
+  font-size: 0.8rem;
+  padding: 0;
+}
+
+@media (min-width: 550px) {
+  .countdown {
+    column-gap: 1em;
+    font-size: 1.5rem;
+  }
+}
+
+.countdown li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.5em;
+  justify-content: center;
+  font-weight: bold;
+  padding: 0.5em;
+  border-radius: 0.25em;
+  background-color: #fffcf9;
+  width: 5em;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 500px) {
+  .countdown li {
+    width: 6em;
+    padding: 1em;
+  }
+}
+
+.countdown span {
+  margin-right: 0.5em;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5em;
+  padding: 2em 1.5em;
+  grid-auto-rows: 18em;
+  max-width: 62em;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+figure {
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+figure::after {
+  content: "";
+  position: absolute;
+  opacity: 0;
+  background-color: #fffcf9;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: opacity 0.5s ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+
+figure:nth-child(4),
+figure:nth-child(3),
+figure:nth-child(6) {
+  grid-row: span 2;
+}
+
+figcaption {
+  opacity: 0;
+  z-index: 1;
+  position: absolute;
+  padding: 1em;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  line-height: 1.3;
+  font-size: 1rem;
+  transform: translate(-50%, -50%) rotate(3deg);
+  transition: all 0.5s ease-in-out;
+}
+
+figure:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 8px 17px -2px rgba(81, 79, 79, 0.75);
+}
+
+figure:hover::after {
+  opacity: 1;
+}
+figure:hover figcaption {
+  opacity: 1;
+}
