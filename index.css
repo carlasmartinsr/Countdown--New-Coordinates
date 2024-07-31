@@ -20,7 +20,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 h1 {
@@ -96,7 +95,7 @@ figure {
   gap: 1.5em;
   padding: 2.2em 1.5em;
   grid-auto-rows: 18em;
-  max-width: 40em;
+  max-width: 50em;
 }
 
 .card-img {
