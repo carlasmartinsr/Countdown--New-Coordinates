@@ -30,10 +30,6 @@ function updateCountDown() {
   );
   leftMinutes = Math.floor((departure % (1000 * 60 * 60)) / (1000 * 60));
   leftSeconds = Math.floor((departure % (1000 * 60)) / 1000);
-  leftHours = 0;
-  leftDays = 0;
-  leftMinutes = 0;
-  leftSeconds = 0;
   display();
 }
 
