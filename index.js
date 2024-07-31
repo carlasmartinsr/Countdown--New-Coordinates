@@ -62,8 +62,8 @@ window.onload = function () {
 
 const elements = document.querySelectorAll(".hover-effect");
 
-elements.forEach((element) => {
-  element.addEventListener("touchstart", () => {
+/*elements.forEach((element) => {
+   element.addEventListener("touchstart", () => {
     if (element.classList.contains("touch-hover-effect"))
       element.classList.remove("touch-hover-effect");
     else {
@@ -71,7 +71,25 @@ elements.forEach((element) => {
     }
   });
 
-  /* element.addEventListener("touchend", () => {
+ element.addEventListener("touchend", () => {
     element.classList.remove("touch-hover-effect");
-  }); */
+  }); 
+});*/
+
+document.addEventListener("DOMContentLoaded", function () {
+  elements.forEach((element) => {
+    element.addEventListener("click", function (e) {
+      e.stopPropagation();
+      elements.forEach((element) => {
+        element.classList.remove("touch-hover-effect");
+      });
+      this.classList.add("touch-hover-effect");
+    });
+  });
+});
+
+document.body.addEventListener("click", function () {
+  elements.forEach((element) => {
+    element.classList.remove("touch-hover-effect");
+  });
 });
