@@ -173,3 +173,7 @@ figcaption {
     opacity: 1;
   }
 }
+
+.touch-hover-effect {
+  opacity: 1;
+}
