@@ -93,8 +93,7 @@ figure {
   display: grid;
   grid-template-columns: repeat(3, minmax(min-content, 270px));
   gap: 10px;
-  grid-auto-rows: 15em;
-  grid-auto-rows: minmax(200px, 100px);
+  grid-auto-rows: 18em;
   padding: 2.2em 1.5em;
 }
 
