@@ -28,19 +28,26 @@ h1 {
   letter-spacing: 0.1em;
 }
 
-h2 {
-  margin: 0 0 0.4em;
-  transform: rotate(-1.5deg);
-}
-
-section {
-  padding: 1.8em 0;
-}
-
 @media (min-width: 500px) {
   h1 {
     font-size: 2rem;
   }
+}
+
+h2 {
+  margin: 0 0 0.4em;
+  transform: rotate(-1.5deg);
+  font-size: 1.2rem;
+}
+
+@media (min-width: 550px) {
+  h2 {
+    font-size: 1.6rem;
+  }
+}
+
+section {
+  padding: 1.8em 0;
 }
 
 .countdown {
