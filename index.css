@@ -70,12 +70,7 @@ section {
   border-radius: 0.25em;
   background-color: #fffcf9;
   flex-wrap: wrap;
-}
-
-@media (min-width: 500px) {
-  .countdown > li {
-    width: 6em;
-  }
+  width: 6em;
 }
 
 .countdown > span {
