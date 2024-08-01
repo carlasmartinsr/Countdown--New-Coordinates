@@ -11,9 +11,9 @@ html {
 body {
   font-family: "Preahvihear", sans-serif;
   background-color: #0d0d0d;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("img/bg.png");
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   color: #8f7b3f;
   text-align: center;
   display: flex;
