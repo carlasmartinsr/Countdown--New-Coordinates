@@ -33,7 +33,6 @@ function updateCountDown() {
   leftSeconds = Math.floor((departure % (1000 * 60)) / 1000);
 
   display();
-  console.log(leftDays);
 }
 
 function confetti() {
