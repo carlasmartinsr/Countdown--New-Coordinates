@@ -14,7 +14,7 @@
   <body>
     <main>
       <h1>Countdown: New Coordinates 💣</h1>
-      <ul id="countdown" class="countdown">
+      <ul class="countdown">
         <li><span id="days"></span>days</li>
         <li><span id="hours"></span>hours</li>
         <li><span id="minutes"></span>minutes</li>
@@ -25,13 +25,13 @@
     <section>
       <h2>Click or tap on the images...</h2>
       <div class="card-container">
-        <figure>
+        <figure role="button" tabindex="0" class="card">
           <img
             src="./img/img-1.jpg"
             class="card-img"
             alt="A woman with long dark hair smiles at an orange tabby cat lying on a wooden platform."
           />
-          <figcaption class="effect">
+          <figcaption class="clicked-effect card-text">
             <span>
               My time in Turkey has come to an end. Although I have never been
               one to say "never," this time I know my stay here is over for
@@ -41,13 +41,13 @@
             </span>
           </figcaption>
         </figure>
-        <figure class="effect">
+        <figure role="button" tabindex="0" class="card">
           <img
             src="./img/img-2.jpg"
             class="card-img"
             alt="A woman with long dark hair smiles while a black and tan dog is in the foreground."
           />
-          <figcaption class="effect">
+          <figcaption class="clicked-effect card-text">
             <span>
               The journey has not been easy, but every experience has taught me
               something valuable. From facing the difficulties of adapting to a
@@ -56,13 +56,13 @@
             </span>
           </figcaption>
         </figure>
-        <figure>
+        <figure role="button" tabindex="0" class="card">
           <img
             src="./img/img-3.jpeg"
             class="card-img"
             alt="A smiling woman pets two dogs in a snowy park, while another dog watches from the background."
           />
-          <figcaption class="effect">
+          <figcaption class="clicked-effect card-text">
             <span>
               The fear of what is to come is something I cannot deny. Every
               change brings with it a mixture of uncertainty and hope, and
@@ -75,13 +75,13 @@
             </span>
           </figcaption>
         </figure>
-        <figure>
+        <figure role="button" tabindex="0" class="card">
           <img
             src="./img/img-4.jpg"
             class="card-img"
             alt="A white kitten with orange spots walks among dry leaves and branches in a natural environment."
           />
-          <figcaption class="effect">
+          <figcaption class="clicked-effect card-text">
             <span>
               The hardest part of saying goodbye, without a doubt, will be the
               stray cats that became my pack. Although I was unable to keep any
@@ -91,9 +91,13 @@
             </span>
           </figcaption>
         </figure>
-        <figure>
-          <img src="./img/img-5.png" class="card-img" alt="" />
-          <figcaption class="effect">
+        <figure role="button" tabindex="0" class="card">
+          <img
+            src="./img/img-5.png"
+            class="card-img"
+            alt="A decorative witch figure sitting on an electricity meter is hanging from a pipe on the wall. Nearby, there is an object that appears to be a piece of dried fruit or an irregularly shaped balloon."
+          />
+          <figcaption class="clicked-effect card-text">
             <span>
               I must confess that I will deeply miss Turkish tea, baklava and
               Turkish coffee, even when I am not a coffee lover. These simple
@@ -102,13 +106,13 @@
             </span>
           </figcaption>
         </figure>
-        <figure>
+        <figure role="button" tabindex="0" class="card">
           <img
             src="./img/img-6.jpg"
             class="card-img"
             alt="Two cats, one gray tabby and one orange with white, in a cardboard box next to a bag containing an empty water bottle."
           />
-          <figcaption class="effect">
+          <figcaption class="clicked-effect card-text">
             <span>
               I feel that I barely learned to care for them and understand their
               world, and I find it hard to accept that they will no longer be in
@@ -119,13 +123,13 @@
             </span>
           </figcaption>
         </figure>
-        <figure>
+        <figure role="button" tabindex="0" class="card">
           <img
             src="./img/img-7.jpeg"
             class="card-img"
-            alt="Five people smiling and enjoying an evening concert."
+            alt="A group of five people smiling and posing for the camera at an event or concert."
           />
-          <figcaption class="effect">
+          <figcaption class="clicked-effect card-text">
             <span>
               I will deeply miss my colleagues and bosses specially Nur and Özge
               who accompanied me during the last part of my time here. Their
@@ -134,9 +138,13 @@
             </span>
           </figcaption>
         </figure>
-        <figure>
-          <img src="./img/img-8.jpg" class="card-img" alt="" />
-          <figcaption class="effect">
+        <figure role="button" tabindex="0" class="card">
+          <img
+            src="./img/img-8.jpg"
+            class="card-img"
+            alt="A person resting on the grass in a park. Only the legs of the person can be seen, next to it is a dark furred dog lying down. "
+          />
+          <figcaption class="clicked-effect card-text">
             <span>
               I can't forget Dovi, who although not a cat, was my faithful doggy
               companion on many of my visits to the park. His cheerful and loyal
@@ -144,9 +152,13 @@
             </span>
           </figcaption>
         </figure>
-        <figure>
-          <img src="./img/img-9.jpeg" class="card-img" alt="" />
-          <figcaption class="effect">
+        <figure role="button" tabindex="0" class="card">
+          <img
+            src="./img/img-9.jpeg"
+            class="card-img"
+            alt="Three people smiling and posing for the camera."
+          />
+          <figcaption class="clicked-effect card-text">
             <span>
               I will miss Clinton, who always made things easier at work during
               this last stage in Turkey. Despite his youth, his conversations

@@ -43,10 +43,6 @@ section {
   }
 }
 
-figure {
-  margin: 0;
-}
-
 .countdown {
   display: flex;
   justify-content: center;
@@ -64,7 +60,7 @@ figure {
   }
 }
 
-.countdown li {
+.countdown > li {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -79,39 +75,46 @@ figure {
 }
 
 @media (min-width: 500px) {
-  .countdown li {
+  .countdown > li {
     width: 6em;
     padding: 1em;
   }
 }
 
-.countdown span {
+.countdown > span {
   margin-right: 0.5em;
 }
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(3, minmax(18em, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
   grid-auto-rows: 17em;
   gap: 1.2em;
   padding: 2.2em 1.5em;
   max-width: 62em;
 }
 
-.card-img {
+.card:nth-child(4),
+.card:nth-child(3),
+.card:nth-child(6) {
+  grid-row: span 2;
+}
+
+.card > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-figure {
+.card {
   transition: all 0.5s ease-in-out;
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  margin: 0;
 }
 
-figure::after {
+.card::after {
   content: "";
   position: absolute;
   opacity: 0;
@@ -125,13 +128,7 @@ figure::after {
   height: 100%;
 }
 
-figure:nth-child(4),
-figure:nth-child(3),
-figure:nth-child(6) {
-  grid-row: span 2;
-}
-
-figcaption {
+.card-text {
   opacity: 0;
   z-index: 1;
   position: absolute;
@@ -149,11 +146,11 @@ figcaption {
   align-items: center;
 }
 
-figcaption span {
+.card-text > span {
   transform: rotate(3deg);
 }
 
-.effect {
+.clicked-effect {
   opacity: 1;
   background-color: #fffcf9;
   transition: all 0.8s ease-in;

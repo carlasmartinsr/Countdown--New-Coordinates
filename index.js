@@ -8,6 +8,7 @@ const hours = document.querySelector("#hours");
 const minutes = document.querySelector("#minutes");
 const seconds = document.querySelector("#seconds");
 let leftDays, leftHours, leftMinutes, leftSeconds;
+const FgClickedEffect = document.querySelectorAll(".clicked-effect");
 
 const expirationDate = new Date("August 22, 2024 09:00:00");
 const expirationTime = expirationDate.getTime();
@@ -60,20 +61,18 @@ window.onload = function () {
   }, 2000);
 };
 
-const fgEffect = document.querySelectorAll(".effect");
-
 document.addEventListener("DOMContentLoaded", function () {
-  fgEffect.forEach((fg) => {
-    fg.classList.remove("effect");
+  FgClickedEffect.forEach((fg) => {
+    fg.classList.remove("clicked-effect");
     fg.addEventListener("click", function (e) {
       e.stopPropagation();
-      this.classList.toggle("effect");
+      this.classList.toggle("clicked-effect");
     });
   });
 });
 
 document.body.addEventListener("click", function () {
-  fgEffect.forEach((fg) => {
-    fg.classList.remove("effect");
+  FgClickedEffect.forEach((fg) => {
+    fg.classList.remove("clicked-effect");
   });
 });
